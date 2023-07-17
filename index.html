@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFUMES LATINOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+    <section id="container">
+        <h1>PERFUMES LATINOS</h1>
+        <section class="imagenes">
+            <div>
+                <img src="/imagenes/aqua.jpeg" alt="perfume aqua">
+                <h2 class="aqua">Aqua</h2>
+                <div><h3>Ventas Juana <input type="text" name="" id="aquaJuana"></h3>
+                     <h3>Ventas Pedro <input type="text" name="" id="aquaPedro"></h3>
+                </div>
+            </div>
+            <div>
+                <img src="/imagenes/emocion.jpg" alt="perfume emoción">
+                <h2 class="emocion">Emoción</h2>
+                <div>
+                    <h3>Ventas Juana <input type="text" name="" id="emocionJuana"></h3>
+                    <h3>Ventas Pedro <input type="text" name="" id="emocionPedro"></h3>
+                </div>
+            </div>
+            <div>
+                <img src="/imagenes/alegria.jpg" alt="perfume alegria">
+                <h2 class="alegria">Alegría</h2>
+                <div>
+                    <h3>Ventas Juana <input type="text" name="" id="alegriaJuana"></h3>
+                    <h3>Ventas Pedro <input type="text" name="" id="alegriaPedro"></h3>
+                </div>
+            </div>
+            <div>
+                <img src="/imagenes/frescura.jpg" alt="perfume frescura">
+                <h2 class="frescura">Frescura</h2>
+                <div>
+                    <h3>Ventas Juana <input type="text" name="" id="frescuraJuana"></h3>
+                    <h3>Ventas Pedro <input type="text" name="" id="frescuraPedro"></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- *Formulario con lista despegable para opción de vendedor y producto -->
+       
+        </section>
+            <form class="formulario">
+                <div>
+                    <select name="nombreVendedor" id="nombreVendedor" class="vendedor">
+                        <option value="juana">Juana</option>
+                        <option value="pedro">Pedro</option>
+                    </select>
+                </div>
+                    <div><input type="number" name="" id="cantidad"></div>
+                <div>
+                    <select name="producto" id="producto" class="producto">
+                        <option value="200">Aqua $200 USD</option>
+                        <option value="180">Emoción $180 USD</option>
+                        <option value="160">Alegria $160 USD</option>
+                        <option value="150">Frescura $150 USD</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <section>
+
+            <!-- Todo Pendiente por validar -->
+            <input type="submit" value="CANCELAR" onclick="" class="cancelar">
+
+             <!-- *Button de funcion y que captura los datos -->
+            <button onclick="dineroRecolectado()">Enviar</button>
+
+            <!-- *Muestra en pantalla los resultados provenientes desde JS -->
+            <div><h3>Ventas juana:<input type="text" name="" id="sumaJuana"></h3></div>
+            <div><h3>Ventas Pedro: <input type="text" id="sumaPedro"></h3></div>
+            <div><h3>Vendedor del Mes: <input type="text" id="resultado"></h3></div>
+        </section>
+    
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
