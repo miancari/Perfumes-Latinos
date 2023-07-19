@@ -50,17 +50,22 @@
 
         <!-- *Formulario con lista despegable para opción de vendedor y producto -->
        
-        </section>
+        
             <form class="formulario">
-                <div>
-                    <select name="nombreVendedor" id="nombreVendedor" class="vendedor">
+                <div class="vendedor">
+                    <h3>VENDEDOR</h3>
+                    <select name="nombreVendedor" id="nombreVendedor">
                         <option value="juana">Juana</option>
                         <option value="pedro">Pedro</option>
                     </select>
                 </div>
-                    <div><input type="number" name="" id="cantidad"></div>
-                <div>
-                    <select name="producto" id="producto" class="producto">
+                <div class="cantidad">
+                    <h3>CANTIDAD <br> VENDIDAS</h3>
+                    <input type="number" name="" id="cantidad">
+                </div>
+                <div class="producto">
+                    <h3>REFERENCIA</h3>
+                    <select name="producto" id="producto">
                         <option value="200">Aqua $200 USD</option>
                         <option value="180">Emoción $180 USD</option>
                         <option value="160">Alegria $160 USD</option>
@@ -68,19 +73,18 @@
                     </select>
                 </div>
             </form>
-        </section>
-        <section>
-
-            <!-- Todo Pendiente por validar -->
-            <input type="submit" value="CANCELAR" onclick="" class="cancelar">
-
-             <!-- *Button de funcion y que captura los datos -->
-            <button onclick="dineroRecolectado()">Enviar</button>
-
+        
+        <section class="ventas">
+            <div>
+                <!-- *Button de funcion y que captura los datos -->
+                <button onclick="dineroRecolectado()">Enviar</button>
+            </div>
             <!-- *Muestra en pantalla los resultados provenientes desde JS -->
-            <div><h3>Ventas juana:<input type="text" name="" id="sumaJuana"></h3></div>
-            <div><h3>Ventas Pedro: <input type="text" id="sumaPedro"></h3></div>
-            <div><h3>Vendedor del Mes: <input type="text" id="resultado"></h3></div>
+            <div class="ventasInput">
+                <div><h3>Ventas juana:<input type="text" name="" id="sumaJuana" >usd</h3></div>
+                <div><h3>Ventas Pedro: <input type="text" id="sumaPedro">usd</h3></div>
+                <div><h3>Vendedor del Mes: <input type="text" id="resultado"></h3></div>
+            </div>
         </section>
     
     </section>
